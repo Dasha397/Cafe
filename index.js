@@ -126,6 +126,10 @@ countOfElem.forEach((count) => {
 		count.setAttribute("data-previous", count.value);
 	})
 	count.addEventListener("change", () => {
+		if (count.value < 0 || isNaN(count.value)) {
+			count.value = 0;
+		}
+
 		totalPrice.textContent = +totalPrice.textContent
 			- count.dataset.previous * count.previousElementSibling.previousElementSibling.value
 			+ count.value * count.previousElementSibling.previousElementSibling.value;
