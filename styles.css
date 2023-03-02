@@ -16,7 +16,7 @@ body {
 }
 
 .order {
-	width: 1100px;
+	max-width: 1100px;
 	margin: 0px auto;
 	background-color: #151212e6;
 	height: 100%;
@@ -80,6 +80,7 @@ label {
 	display: flex;
 	flex-direction: column;
 	width: 300px;
+	/* margin: 0 auto; */
 }
 
 .container>div {
@@ -116,6 +117,17 @@ label {
 	border-radius: 5px;
 	color: #151212f1;
 	background-color: rgb(211, 205, 205);
+}
+
+.btn:hover {
+	color: #0e0d0df1;
+	background-color: rgb(184, 179, 179);
+}
+
+.btn:active {
+	color: #0e0d0df1;
+	background-color: rgb(184, 179, 179);
+	border: 2px #827c7c solid;
 }
 
 .totalPrice {
